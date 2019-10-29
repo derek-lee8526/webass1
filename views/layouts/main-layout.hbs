@@ -4,10 +4,17 @@
         <title>Memory Game</title>
         <meta charset="utf-8">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=5.0"> -->
+
         <link rel="stylesheet" href="./bootstrap.min.css" />
         <link rel="stylesheet" href="./index.css" />
+        {{#if summarycss}}
+            <link href="./summary.css" rel='stylesheet'/>
+        {{/if}}
+
+
         <script type="text/javascript" src="./strings.js" defer></script>
         <script type="text/javascript" src="./index.js" defer></script>
+        <script type="text/javascript" src="./summary.js" defer></script>
     </head>
     <body>
         {{{body}}}

@@ -22,11 +22,11 @@ app.use(express.static('public'));
 
 
 app.get('/',  (req,res) => {
-    res.render('index');
+    res.render('index', {indexCSS: true});
 })
 
 app.get('/summary', (req,res) => {
-    res.render('summary')
+    res.render('summary', {summarycss: true})
 })
 
 app.get('/leaderboard', (req,res) => {

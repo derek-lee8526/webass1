@@ -36,12 +36,14 @@ score_label.id = "score_lbl";
 document.body.insertBefore(score_label, document.getElementById("passfail"));
 document.getElementById("score_lbl").innerHTML = SCORELBL + score;
 
+
 // Store score
 function terminating() {
     if (confirm(ARE_YOU_SURE)) {
         localStorage.setItem("score", JSON.stringify(score));
         if (score > 0) {
             localStorage.setItem("iterations", JSON.stringify(grid_iterations));
+            console.log(score)
         }
         window.location.href = "./summary";
     }
@@ -181,7 +183,7 @@ function flipping() {
             setTimeout(function() {
                 localStorage.setItem("score", JSON.stringify(score));
                 alert(GAME_OVER);
-                window.location.href = "./Summary.html";
+                window.location.href = "./summary";
             }, 1000);    
         }
     } else {
