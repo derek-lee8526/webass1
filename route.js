@@ -1,11 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-
-router.get('/terminate', (req,res) => {
-    res.render('summary')
+router.post('/summary/score', (req,res) => {
+    res.render('leaderboard')
 })
-
-
 
 module.exports = router;

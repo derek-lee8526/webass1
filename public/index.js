@@ -43,7 +43,7 @@ function terminating() {
         if (score > 0) {
             localStorage.setItem("iterations", JSON.stringify(grid_iterations));
         }
-        window.location.href = "./Summary.html";
+        window.location.href = "./summary";
     }
 }
 
