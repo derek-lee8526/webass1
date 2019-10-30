@@ -1,7 +1,8 @@
 let db = require('../utils/database')
 
 function addUser(data) {
-
+    let sql = "INSERT INTO score (name, score) values ('" + data.name+ "','" + data.score +"')";
+    db.execute(sql);
 }
 
 function getUser() {
