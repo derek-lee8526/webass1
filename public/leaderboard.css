@@ -1,6 +1,6 @@
 table {
     width: 35%;
-    margin: 6% 0 0 38%;
+    margin: 2% 0 0 38%;
 }
 
 h2 {
@@ -13,4 +13,15 @@ h5 {
 
 #restartButton {
     margin: 2% 0 0 47%;
+}
+
+#userName {
+    display: inline-block;
+    margin-left: 38%;
+    width: 23%;
+    margin-top: 3%;
+}
+
+#userScore {
+    display: inline-block;
 }

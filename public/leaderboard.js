@@ -12,7 +12,7 @@ window.onload = function() {
 
 function addUser(user,score) {
     let board = document.getElementById('leaderboard')
-    let addScore = board.insertRow(0)
+    let addScore = board.insertRow(-1)
     
     let cell1 = addScore.insertCell(0)
     let cell2 = addScore.insertCell(1)
