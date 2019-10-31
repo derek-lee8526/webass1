@@ -24,14 +24,14 @@ app.use(express.static('public'));
 app.get('/',  (req,res) => {
     res.render('index', {indexCSS: true});
 })
-app.get('/summary/leaderboard', (req,res) => {
-    res.render('leaderboard')
-})
 
 app.get('/summary', (req,res) => {
     res.render('summary', {summarycss: true})
 })
 
+app.get('/leaderboard', (req,res) => {
+    res.render('leaderboard')
+})
 
 app.use(route);
 

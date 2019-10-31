@@ -6,7 +6,7 @@ function addUser(data) {
 }
 
 function getUser() {
-    return db.execute('SELECT * FROM score ORDER BY id DESC limit 5')
+    return db.execute('SELECT * FROM score ORDER BY score DESC LIMIT 5')
 }
 
 module.exports = {

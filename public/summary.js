@@ -1,10 +1,12 @@
+let score = localStorage.getItem("score");
+document.getElementById('score').innerHTML = score
+
+
 function back() {
     window.location.href = './'
     localStorage.clear()
 }
 
-let score = localStorage.getItem("score");
-document.getElementById('score').innerHTML = score
 
 function sendData() {
     name = document.getElementById('name').value
@@ -20,4 +22,5 @@ function sendData() {
         body: JSON.stringify(bodyContent)
     }).then(()=>console.log("success"))
     .catch((err)=> console.log(err))
+    window.location.href = "./leaderboard"
 }
