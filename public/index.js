@@ -255,6 +255,7 @@ function reveal_order() {
 
 // Run right at the start only
 (function starting(){
+    playsound();
     set_classname();
     load_tile(level);
     set_grid();
